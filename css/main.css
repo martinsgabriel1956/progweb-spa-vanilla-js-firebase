@@ -15,7 +15,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #233237;
 }
 
 header, nav, main, footer, aside {
@@ -47,21 +47,22 @@ a:hover {
 
 main {
     flex-grow: 1;
+    background: #fff;
 }
 
 header {
     display: flex;
     justify-content: flex-start;
-    padding: 0.3rem;
+    align-items: center;
+    padding: 0.5rem;
     background: #984843;
 }
 
 header i {
     font-size: 2rem;
-    color: darkred;
+    color: rgb(61, 0, 0);
     -webkit-text-stroke: #fff 1px;
     -moz-text-stroke:  #fff 1px;
-   
 }
 
 header h1 {
@@ -73,9 +74,9 @@ header h1 {
 
 header small {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
-    letter-spacing: .13rem;
+    letter-spacing: 0.13rem;
     color: #eac67a;
 }
 
@@ -94,8 +95,8 @@ nav a {
 }
 
 nav a:hover {
-    color:#18121e;
-    background:#eac67a ;
+    color: #18121e;
+    background: #eac67a ;
 }
 
 nav a:first-child {
@@ -109,23 +110,21 @@ nav span {
 footer {
     display: none;
     background: rgb(122, 141, 148);
-    color: #fff ;
+    color: #fff;
     text-align: center;
     font-size: .8rem;
     padding: .4rem;
 }
 
 @media (min-width: 575px) {
-    
     header {order: 1;} 
-
     nav {order: 2;}
-
     main{order: 3;} 
-    
     footer {
         display: block;
         order: 4;
     }
-
+    header i {
+        font-size: 3rem;
+    }
 }
