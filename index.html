@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <base href="https://github.com/martinsgabriel1956/progweb-spa-vanilla-js-firebase">
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PodeCast?</title>
@@ -27,10 +27,6 @@
             <h1>PodeCast? <small>O maior agregador de podcast da américa latina</small></h1>
         </header>
         
-        <main>
-            
-        </main>
-        
         <nav>
             <a routerLink="home"><i class="fas fa-fw fa-home"></i><span>Início</span></a>
             <a routerLink="news"><i class="far fa-fw fa-newspaper"></i>></i><span>Notícias</span></a>
@@ -38,12 +34,24 @@
             <a routerLink="about"><i class="fas fa-fw fa-info-circle"></i></i><span>Informação</span></a>
         </nav>
         
+        <main>
+            <noscript>Ative o JavaScript no navegador para aproveitar ao máximo os recursos deste site!</noscript>
+        </main>
+        
         <footer>
+            <a routerLink="home"><i class="fas fa-fw fa-home"></i></a>
+            <div class="social">
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-fw fa-facebook-square"></i></a>
+                <a href="https://youtube.com/" target="_blank"><i class="fab fa-fw fa-youtube-square"></i></a>
+                <a href="https://GitHub.com/" target="_blank"><i class="fab fa-fw fa-github-square"></i></a>
+                <a href="https://Linkedin.com/" target="_blank"><i class="fab fa-fw fa-linkedin"></i></a>
+            </div>
             &copy; Copyright 2020 Gabriel Martins
         </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
