@@ -24,7 +24,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #233237;
 }
 
 header, nav, main, footer, aside {
@@ -102,6 +102,7 @@ a:hover {
 
 main {
     flex-grow: 1;
+    background: #fff;
 }
 
 header {
@@ -116,7 +117,6 @@ header i {
     color: var(--faux-medium-purple);
     -webkit-text-stroke: #fff 1px;
     -moz-text-stroke:  #fff 1px;
-   
 }
 
 header h1 {
@@ -128,7 +128,7 @@ header h1 {
 
 header small {
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
     letter-spacing: .13rem;
     color: var(--faux-medium-purple);
@@ -173,16 +173,14 @@ footer {
 }
 
 @media (min-width: 575px) {
-    
     header {order: 1;} 
-
     nav {order: 2;}
-
     main{order: 3;} 
-    
     footer {
         display: block;
         order: 4;
     }
-
+    header i {
+        font-size: 3rem;
+    }
 }
