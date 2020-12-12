@@ -122,6 +122,11 @@ header i {
     -moz-text-stroke:  #fff 1px;
 }
 
+header i:hover {
+    color: var(--cultured);
+    transition: color 0.5s;
+}
+
 header h1 {
     font-size: 1.5rem;
     margin: 0 0 0 1rem;
@@ -167,23 +172,124 @@ nav span {
 }
 
 footer {
-    display: none;
     background: var(--faux-medium-purple);
-    color: var(--cultured) ;
+    color: var(--cultured);
+    justify-content: flex-start;
     text-align: center;
     font-size: .8rem;
-    padding: .4rem;
+    padding: .8rem;
+    border-radius: 0.2rem;
 }
+
+footer a {
+    display: none;
+    color: var(--cultured);
+    padding: 0.3rem 0.2rem 0.2rem ;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+  }
+
+footer a:hover {
+    color: var(--faux-blue-magenta-violete);
+
+}
+
+footer .social {
+    padding-left: 2.6rem;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    margin-left: auto;
+  }
 
 @media (min-width: 575px) {
     header {order: 1;} 
-    nav {order: 2;}
-    main{order: 3;} 
+    nav {
+        order: 2;
+        flex-direction: row;
+    }
+    main{
+        order: 3;
+        margin-bottom: 0.4rem;
+    } 
     footer {
-        display: block;
         order: 4;
+        display: flex;
+    }
+    footer a {
+        display: inline-block;
     }
     header i {
         font-size: 3rem;
     }
+    #terms div {
+        display: flex;
+        align-items: center;
+      }
+      .terms-btn {
+        padding-left: 1rem;
+      }
+      .terms-btn button {
+        margin-top: 0;
+      }
 }
+
+.content {
+    background: var(--faux-may-green);
+    border-radius: 0.4rem;
+    border: 1px dotted grey;
+    flex-grow: 1;
+    padding: 0.5rem;
+    color: var(--cultured);
+    margin-bottom: 0.4rem;
+  }
+  .content h2,
+  aside h3 {
+    margin: 0;
+  }
+  aside {
+    background: var(--faux-illuminating-emerald);
+    border-radius: 0.4rem;
+    border: 1px dotted grey;
+    padding: 0.5rem;
+    margin-top: 0.4rem;
+  }
+
+  .content ul li {
+      list-style: none;
+  }
+
+  .content ul li a:hover {
+    color: var(--faux-medium-aquamarine);
+    transition: all 0.5s;
+  }
+
+  .content button {
+      border: none;
+      background: var(--faux-kiwi);
+      padding: 0.5rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      color: var(--cultured);
+  }
+
+  .content button:hover {
+      opacity: 0.6;
+      transition: opacity 0.5s;
+  }
+
+  @media (min-width: 576px) {
+    .content {
+      margin: 0;
+      padding: 1rem;
+    }
+    aside {
+      margin: 0 0 0 0.4rem;
+      min-width: 180px;
+      max-width: 200px;
+      padding: 1rem;
+    }
+  }
