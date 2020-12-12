@@ -1,4 +1,3 @@
-/*Reset*/
 :root {
     --faux-blue-magenta-violete: #564091;
     --faux-may-green: #31913A;
@@ -24,7 +23,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #233237;
+    background: #333;
 }
 
 header, nav, main, footer, aside {
@@ -39,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: orangered;
+    color: var(--faux-medium-purple);
 }
 
 /*Estrutura do Template*/
@@ -59,9 +58,9 @@ a:hover {
 }
 
 #terms div {
-    background: var(--faux-blue-magenta-violete);
+    background: var(--faux-illuminating-emerald);
     color: var(--cultured);
-    border: 1px solid var(--faux-medium-purple);
+    border: 1px solid var(--faux-kiwi);
     margin-bottom: 0.4rem;
     padding: 0.4rem;
     border-radius: 0.4rem;
@@ -99,6 +98,10 @@ a:hover {
     background: var(--faux-medium-purple);
 }
 
+.terms-btn-btn:first-child,
+.terms-btn-btn:last-child {
+    color: var(--cultured);
+}
 
 main {
     flex-grow: 1;
