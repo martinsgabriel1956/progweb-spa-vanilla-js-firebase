@@ -145,9 +145,9 @@ function routerLoad(routePath) {
 
     // Monta os links dos documentos da página
     var load = {
-        css: `/pages/${page}/${page}.css`, // Folha de estilos
-        html: `/pages/${page}/${page}.html`, // HTML da página
-        js: `/pages/${page}/${page}.js`, // JavaScript
+        css: `/progweb-spa-vanilla-js-firebase/pages/${page}/${page}.css`, // Folha de estilos
+        html: `/progweb-spa-vanilla-js-firebase/pages/${page}/${page}.html`, // HTML da página
+        js: `/progweb-spa-vanilla-js-firebase/pages/${page}/${page}.js`, // JavaScript
         hash: `/${routePath}` // Barra de endereços
     };
     // console.log(load);
